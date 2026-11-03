@@ -1,0 +1,33 @@
+Rows: 7403 | train 5922 | test 1481
+                   train_MAE  train_MSE  train_RMSE  train_R2  test_MAE  test_MSE  test_RMSE  test_R2  cv_RMSE  cv_RMSE_std
+Model                                                                                                                      
+Baseline (mean)        0.448      0.304       0.551     0.000     0.455     0.309      0.556   -0.000    0.551        0.014
+Linear Regression      0.264      0.127       0.356     0.582     0.261     0.121      0.348    0.608    0.359        0.018
+Decision Tree          0.000      0.000       0.000     1.000     0.348     0.228      0.478    0.263    0.480        0.005
+Random Forest          0.094      0.017       0.129     0.945     0.243     0.108      0.329    0.649    0.350        0.015
+Tuning Decision Tree ...
+Tuning Random Forest ...
+                       train_MAE  train_MSE  train_RMSE  train_R2  test_MAE  test_MSE  test_RMSE  test_R2  cv_RMSE  cv_RMSE_std
+Model                                                                                                                          
+Linear Regression          0.264      0.127       0.356     0.582     0.261     0.121      0.348    0.608    0.359        0.018
+Decision Tree (tuned)      0.262      0.126       0.355     0.585     0.270     0.132      0.363    0.574    0.374        0.016
+Random Forest (tuned)      0.173      0.057       0.239     0.813     0.239     0.105      0.323    0.662    0.342        0.015
+
+Best model by CV RMSE: Random Forest (tuned)
+                                       n_rows    MAE    MSE   RMSE     R2
+Experiment                                                               
+Main: rated restaurants, all features    7403  0.239  0.105  0.323  0.662
+Rated restaurants, WITHOUT Votes         7403  0.294  0.141  0.376  0.543
+Including 'Not rated' (rating 0) rows    9551  0.198  0.088  0.296  0.961
+     City                                            Cuisines  Price range  Votes  Actual  Predicted  Abs error
+  Gurgaon           North Indian, Continental, Mughlai, Asian            4   2806     4.1       3.93       0.17
+    Noida                               North Indian, Chinese            2     23     2.3       2.99       0.69
+  Gurgaon                                    Bakery, Desserts            3     26     3.2       3.51       0.31
+New Delhi                                        North Indian            1      8     2.9       3.07       0.17
+New Delhi                                             Chinese            1     63     3.4       3.13       0.27
+New Delhi            Cafe, North Indian, Continental, Chinese            2    142     3.9       3.56       0.34
+New Delhi                      North Indian, Mughlai, Chinese            2      4     3.0       3.00       0.00
+New Delhi                  North Indian, Chinese, Street Food            1     34     3.5       3.20       0.30
+  Gurgaon                                        North Indian            1     34     3.2       2.94       0.26
+ Pretoria Cafe, Burger, Tapas, South African, European, Grill            4    150     3.9       4.12       0.22
+Saved model -> /home/claude/Cognifyz-ML-Internship/Task-1-Restaurant-Rating-Prediction/models/best_model.joblib  (326s total)

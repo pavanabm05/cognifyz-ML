@@ -1,0 +1,12 @@
+{
+  "Decision Tree": {
+    "model__max_depth": 8,
+    "model__min_samples_leaf": 40
+  },
+  "Random Forest": {
+    "model__n_estimators": 200,
+    "model__min_samples_leaf": 2,
+    "model__max_features": 0.3,
+    "model__max_depth": null
+  }
+}

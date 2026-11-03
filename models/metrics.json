@@ -1,0 +1,25 @@
+{
+  "best_model": "Random Forest (tuned)",
+  "selection_rule": "lowest 5-fold CV RMSE on training set",
+  "n_train": 5922,
+  "n_test": 1481,
+  "test_metrics": {
+    "MAE": 0.23844380102127577,
+    "MSE": 0.1042393637918977,
+    "RMSE": 0.32286121444344734,
+    "R2": 0.6629617394000674
+  },
+  "cv_RMSE": 0.34152955785095673,
+  "best_params": {
+    "Decision Tree": {
+      "model__max_depth": 8,
+      "model__min_samples_leaf": 40
+    },
+    "Random Forest": {
+      "model__n_estimators": 200,
+      "model__min_samples_leaf": 2,
+      "model__max_features": 0.3,
+      "model__max_depth": null
+    }
+  }
+}

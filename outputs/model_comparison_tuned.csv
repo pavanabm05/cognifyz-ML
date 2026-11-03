@@ -1,0 +1,4 @@
+Model,train_MAE,train_MSE,train_RMSE,train_R2,test_MAE,test_MSE,test_RMSE,test_R2,cv_RMSE,cv_RMSE_std
+Linear Regression,0.2638,0.127,0.3564,0.5818,0.2613,0.1212,0.3482,0.608,0.3595,0.0175
+Decision Tree (tuned),0.2622,0.1261,0.3551,0.585,0.2699,0.1318,0.3631,0.5737,0.3742,0.0165
+Random Forest (tuned),0.1439,0.04,0.1999,0.8685,0.2384,0.1042,0.3229,0.663,0.3415,0.0151

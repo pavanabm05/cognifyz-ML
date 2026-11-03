@@ -1,0 +1,4 @@
+Experiment,n_rows,MAE,MSE,RMSE,R2
+"Main: rated restaurants, all features",7403,0.2384,0.1042,0.3229,0.663
+"Rated restaurants, WITHOUT Votes",7403,0.293,0.1415,0.3761,0.5426
+Including 'Not rated' (rating 0) rows,9551,0.1965,0.0866,0.2942,0.962
